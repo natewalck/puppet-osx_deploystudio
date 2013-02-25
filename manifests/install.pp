@@ -1,7 +1,7 @@
 # osx_deploystudio::install class. Installs all necessary files for deploystudio
 class osx_deploystudio::install {
-  package {'DeployStudioServer_v1.0rc135.dmg':
+  package {'DeployStudioServer_v1.5.17.dmg':
     ensure => present,
-    source => 'http://puppetmaster01.paradise/pkgs/deploystudio/DeployStudioServer_v1.0rc135.dmg',
+    source => 'http://www.deploystudio.com/get.php?fp=DeployStudioServer_v1.5.17.dmg',
   }
 }
