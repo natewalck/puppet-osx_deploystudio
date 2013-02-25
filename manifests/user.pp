@@ -5,7 +5,7 @@ class osx_deploystudio::user {
     ensure => 'present',
   }
 
-  user {"${service_account_name}":
+  user { $service_account_name:
     ensure   => 'present',
     groups   => 'deploystudio',
     password => $osx_service_account_hash,
