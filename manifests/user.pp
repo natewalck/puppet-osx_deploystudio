@@ -4,9 +4,9 @@ group { 'deploystudio':
   ensure => 'present',
 }
 
-
-user {'deploystudio':
+user {"${service_account_name}":
   ensure   => 'present',
-  groups   => $service_account_name,
+  groups   => 'deploystudio',
   password => $osx_service_account_hash,
+  require  => Group['deploystudio'],
 }
