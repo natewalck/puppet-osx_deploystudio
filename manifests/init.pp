@@ -8,7 +8,7 @@
 # manually with the desired password to get this hash. (This is stored in 
 # /Library/Preferences/com.deploystudio.server.plist)
 
-class deploystudio(
+class osx_deploystudio(
   $ds_role='replica',
   $ds_master_url='https://deploystudiomaster.domain.com:60443',
   $service_account_name='deploystudio',
